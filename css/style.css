@@ -23,13 +23,17 @@ Dark green: #28b485
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  /* font-size: 16px; */
   line-height: 1.7;
   color: #777;
-  padding: 20px;
+  padding: 2rem;
 }
 
 .header {
@@ -48,12 +52,12 @@ body {
 
 .logo-box {
   position: absolute;
-  top: 40px;
-  left: 40px;
+  top: 4rem;
+  left: 4rem;
 }
 
 .logo {
-  height: 80px;
+  height: 8rem;
 }
 
 .text-box {
@@ -68,14 +72,14 @@ body {
   color: #fff;
   text-transform: uppercase;
   backface-visibility: hidden;
-  margin-bottom: 60px;
+  margin-bottom: 6rem;
 }
 
 .heading-primary-main {
   display: block;
-  font-size: 60px;
+  font-size: 6rem;
   font-weight: 400;
-  letter-spacing: 35px;
+  letter-spacing: 3.5rem;
 
   /* Animation */
   animation-name: moveInLeft;
@@ -85,7 +89,7 @@ body {
 
 .heading-primary-sub {
   display: block;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 700;
   letter-spacing: 17.4px;
 
@@ -100,27 +104,27 @@ body {
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-10rem);
   }
   80% {
     transform: translateX(8px);
   }
   100% {
     opacity: 1;
-    transform: translate(0px);
+    transform: translate(0);
   }
 }
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(10rem);
   }
   80% {
     transform: translateX(-8px);
   }
   100% {
     opacity: 1;
-    transform: translate(0px);
+    transform: translate(0);
   }
 }
 
@@ -132,6 +136,7 @@ body {
   display: inline-block;
   border-radius: 100px;
   transition: all 0.2s;
+  font-size: 1.6rem;
   position: relative;
 }
 
@@ -161,7 +166,6 @@ body {
   left: 0;
   z-index: -1;
   transition: all 0.5s;
-
 }
 
 .btn-white::after {
@@ -171,22 +175,20 @@ body {
 .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
-  
 }
 .btn-animated {
-  animation: moveInTop .5s ease-out .75s;
+  animation: moveInTop 0.5s ease-out 0.75s;
   animation-fill-mode: backwards;
 }
-
 
 @keyframes moveInTop {
   0% {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(3rem);
   }
 
   100% {
     opacity: 1;
-    transform: translate(0px);
+    transform: translate(0);
   }
 }
