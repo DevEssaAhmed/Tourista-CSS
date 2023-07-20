@@ -1,20 +1,14 @@
-/*
-COLORS:
-
-Light green: #7ed56f
-Medium green: #55c57a
-Dark green: #28b485
-
-*/
-
 /* CSS HEX
 --black: #000000ff;
 --picton-blue: #00AEEFff;
 --celtic-blue: #2776D3ff;
 --vivid-sky-blue: #00D3FDff; */
 
-/* Reset */
+$color-primary: #00aeefff;
+$color-primary-dark: #2776d3ff;
+$color-primary-light: #00d3fdff;
 
+/* Reset */
 *,
 *::after,
 *::before {
@@ -40,8 +34,8 @@ body {
   height: 95vh;
   background-image: linear-gradient(
       to right bottom,
-      rgba(0, 211, 253, 0.8),
-      rgba(39, 119, 211, 0.8)
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
     ),
     url('../img/hero.jpg');
   background-size: cover;
